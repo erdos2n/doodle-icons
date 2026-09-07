@@ -12,6 +12,7 @@
       },
       "file_stems": {
   "README": "readme",
+  "README.md": "readme",
   "Dockerfile": "dockerfile",
   "LICENSE": "license",
   "package.json": "package"
