@@ -1,22 +1,48 @@
 {
   "$schema": "https://zed.dev/schema/icon_themes/v0.3.0.json",
-  "name": "Doodle Icons",
+  "name": "Doodle Icons RC",
   "author": "Alris <alrisdhanwani@protonmail.com>",
   "themes": [
     {
-      "name": "Doodle Icons",
+      "name": "Doodle Icons RC",
       "appearance": "dark",
       "directory_icons": {
         "collapsed": "./icons/folder.svg",
         "expanded": "./icons/folder-open.svg"
       },
+      "named_directory_icons": {
+        ".claude": {
+          "collapsed": "./icons/claude-folder.svg",
+          "expanded": "./icons/claude-folder-open.svg"
+        },
+        "agents": {
+          "collapsed": "./icons/anthropic-folder.svg",
+          "expanded": "./icons/anthropic-folder-open.svg"
+        },
+        "skills": {
+          "collapsed": "./icons/skills-folder.svg",
+          "expanded": "./icons/skills-folder-open.svg"
+        },
+        "hooks": {
+          "collapsed": "./icons/hooks-folder.svg",
+          "expanded": "./icons/hooks-folder-open.svg"
+        },
+        ".github": {
+          "collapsed": "./icons/github-folder.svg",
+          "expanded": "./icons/github-folder-open.svg"
+        }
+      },
       "file_stems": {
-  "README": "readme",
-  "README.md": "readme",
-  "Dockerfile": "dockerfile",
-  "LICENSE": "license",
-  "package.json": "package"
-},
+        "README": "readme",
+        "README.md": "readme",
+        "Dockerfile": "dockerfile",
+        "LICENSE": "license",
+        "package.json": "package",
+        "CLAUDE.md": "claude-code",
+        "CLAUDE.local.md": "claude-code",
+        "AGENTS.md": "claude-code",
+        ".mcp.json": "mcp"
+      },
       "file_suffixes": {
         "py": "python",
         "js": "js",
@@ -85,6 +111,7 @@
         "gy": "dart",
         "xhtml": "html",
         "mdx": "md",
+        "mdc": "md",
         "mmd": "mermaid",
         "mermaid": "mermaid",
         "ts": "typescript",
@@ -125,44 +152,121 @@
         "gitignore": "git",
         "gitattributes": "git",
         "gitmodules": "git",
-        "pkg": "package"
+        "pkg": "package",
+        "mcp.json": "mcp"
       },
       "file_icons": {
-        "python": { "path": "./icons/python.svg" },
-        "js": { "path": "./icons/js.svg" },
-        "lua": { "path": "./icons/lua.svg" },
-        "html": { "path": "./icons/html.svg" },
-        "css": { "path": "./icons/css.svg" },
-        "java": { "path": "./icons/java.svg" },
-        "rust": { "path": "./icons/rust.svg" },
-        "json": { "path": "./icons/json.svg" },
-        "toml": { "path": "./icons/toml.svg" },
-        "yaml": { "path": "./icons/yaml.svg" },
-        "dart": { "path": "./icons/dart.svg" },
-        "md": { "path": "./icons/md.svg" },
-        "pdf": { "path": "./icons/pdf.svg" },
-        "go": { "path": "./icons/go.svg" },
-        "txt": { "path": "./icons/txt.svg" },
-        "lock": { "path": "./icons/lock.svg" },
-        "db": { "path": "./icons/db.svg" },
-        "xml": { "path": "./icons/xml.svg" },
-        "mp3": { "path": "./icons/mp3.svg" },
-        "png": { "path": "./icons/png.svg" },
-        "excalidraw": { "path": "./icons/excalidraw.svg" },
-        "kotlin": { "path": "./icons/kotlin.svg" },
-        "c": { "path": "./icons/c.svg" },
-        "cpp": { "path": "./icons/cpp.svg" },
-        "c-sharp": { "path": "./icons/c-sharp.svg" },
-        "git": { "path": "./icons/git.svg" },
-        "mermaid": { "path": "./icons/mermaid.svg" },
-        "zip": { "path": "./icons/zip.svg" },
-        "typescript": { "path": "./icons/typescript.svg" },
-        "vlc": { "path": "./icons/vlc.svg" },
-        "bash": { "path": "./icons/bash.svg" },
-        "readme": { "path": "./icons/readme.svg" },
-        "license": { "path": "./icons/license.svg" },
-        "dockerfile": { "path": "./icons/docker.svg" },
-        "package": { "path": "./icons/package.svg" }
+        "python": {
+          "path": "./icons/python.svg"
+        },
+        "js": {
+          "path": "./icons/js.svg"
+        },
+        "lua": {
+          "path": "./icons/lua.svg"
+        },
+        "html": {
+          "path": "./icons/html.svg"
+        },
+        "css": {
+          "path": "./icons/css.svg"
+        },
+        "java": {
+          "path": "./icons/java.svg"
+        },
+        "rust": {
+          "path": "./icons/rust.svg"
+        },
+        "json": {
+          "path": "./icons/json.svg"
+        },
+        "toml": {
+          "path": "./icons/toml.svg"
+        },
+        "yaml": {
+          "path": "./icons/yaml.svg"
+        },
+        "dart": {
+          "path": "./icons/dart.svg"
+        },
+        "md": {
+          "path": "./icons/md.svg"
+        },
+        "pdf": {
+          "path": "./icons/pdf.svg"
+        },
+        "go": {
+          "path": "./icons/go.svg"
+        },
+        "txt": {
+          "path": "./icons/txt.svg"
+        },
+        "lock": {
+          "path": "./icons/lock.svg"
+        },
+        "db": {
+          "path": "./icons/db.svg"
+        },
+        "xml": {
+          "path": "./icons/xml.svg"
+        },
+        "mp3": {
+          "path": "./icons/mp3.svg"
+        },
+        "png": {
+          "path": "./icons/png.svg"
+        },
+        "excalidraw": {
+          "path": "./icons/excalidraw.svg"
+        },
+        "kotlin": {
+          "path": "./icons/kotlin.svg"
+        },
+        "c": {
+          "path": "./icons/c.svg"
+        },
+        "cpp": {
+          "path": "./icons/cpp.svg"
+        },
+        "c-sharp": {
+          "path": "./icons/c-sharp.svg"
+        },
+        "git": {
+          "path": "./icons/git.svg"
+        },
+        "mermaid": {
+          "path": "./icons/mermaid.svg"
+        },
+        "zip": {
+          "path": "./icons/zip.svg"
+        },
+        "typescript": {
+          "path": "./icons/typescript.svg"
+        },
+        "vlc": {
+          "path": "./icons/vlc.svg"
+        },
+        "bash": {
+          "path": "./icons/bash.svg"
+        },
+        "readme": {
+          "path": "./icons/readme.svg"
+        },
+        "license": {
+          "path": "./icons/license.svg"
+        },
+        "dockerfile": {
+          "path": "./icons/docker.svg"
+        },
+        "package": {
+          "path": "./icons/package.svg"
+        },
+        "claude-code": {
+          "path": "./icons/claude-code.svg"
+        },
+        "mcp": {
+          "path": "./icons/mcp.svg"
+        }
       }
     }
   ]
